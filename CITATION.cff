@@ -1,0 +1,20 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 3710-a2
+message: 'Feel free to cite or not cite this repository, as you wish'
+type: software
+authors:
+  - given-names: Jeremie
+    family-names: Bornais
+  - given-names: Justin
+    family-names: Bornais
+  - given-names: Zach
+    family-names: Hutz
+  - given-names: Caden
+    family-names: Quiring
+repository-code: 'https://github.com/jere-mie/3710-a2'
+license: MIT
+version: '0.1'
+date-released: '2023-02-18'
