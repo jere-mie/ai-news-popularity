@@ -14,18 +14,18 @@ The data source can be found [here](https://archive.ics.uci.edu/ml/datasets/onli
 
 The following notebooks are used for preparing the data:
 
-- [data_prep.ipynb](data_prep.ipynb)
-  - This notebook drops categorical features and other features that are unimportant to our algorithms. This should be the first notebook to be executed, and creates a classification problem out of this dataset: an article with less than 1000 shares (an unpopular one), or one with 1000 or more shares. The expected input is [OnlineNewsPopularity.csv](data/OnlineNewsPopularity.csv). A cleaned csv ([OnlineNewsPopularity.csv](OnlineNewsPopularity.csv)) is the expected output.
+- [data_prep.ipynb](code/data_prep.ipynb)
+  - This notebook drops categorical features and other features that are unimportant to our algorithms. This should be the first notebook to be executed, and creates a classification problem out of this dataset: an article with less than 1000 shares (an unpopular one), or one with 1000 or more shares. The expected input is [OnlineNewsPopularity.csv](code/data/OnlineNewsPopularity.csv). A cleaned csv ([OnlineNewsPopularity.csv](code/data/OnlineNewsPopularity.csv)) is the expected output.
 - [tts.ipynb](tts.ipynb)
-  - This notebook handles the train-test-split process, dividing the cleaned csv into four files ([train_features.csv](data/train_features.csv), [train_labels.csv](data/train_labels.csv), [test_features.csv](data/test_features.csv), [test_labels.csv](data/test_labels.csv)).
+  - This notebook handles the train-test-split process, dividing the cleaned csv into four files ([train_features.csv](code/data/train_features.csv), [train_labels.csv](code/data/train_labels.csv), [test_features.csv](code/data/test_features.csv), [test_labels.csv](code/data/test_labels.csv)).
 
 ### Algorithms
 
 The following notebooks contain algorithms to be run on the train and test sets:
 
-- [decision_tree.ipynb](decision_tree.ipynb)
+- [decision_tree.ipynb](code/decision_tree.ipynb)
   - This notebook runs a decision tree with the goal of classifying this data.
-- [knn.ipynb](knn.ipynb)
+- [knn.ipynb](code/knn.ipynb)
   - This notebook runs the k-nearest-neighbours algorithm with the goal of classifying this data.
-- [random_forest.ipynb](random_forest.ipynb)
+- [random_forest.ipynb](code/random_forest.ipynb)
   - This notebook runs the random forest algorithm with the goal of classifying this data.
