@@ -4,7 +4,7 @@ Assignment 2 of COMP-3710
 
 ## Data Overview
 
-The dataset under test consists of ~40,000 news articles, their number of shares, and a variety of statistics. Our objective is to analyze the data and make predictions about an article's popularity using these statistics and various algorithms. This has been made into a classification problem, where we determine if an article lands in the 0th to 25th to percentile, 25th to 50th percentile, 50th to 75th percentile, or 75th to 100th percentile.
+The dataset under test consists of ~40,000 news articles, their number of shares, and a variety of statistics. Our objective is to analyze the data and make predictions about an article's popularity using these statistics and various algorithms. This has been made into a classification problem, where we determine if an article lands in the 0th percentile and above, 25th percentile and above, 75th percentile and above, or 75th percentile and above.
 
 The data source can be found [here](https://archive.ics.uci.edu/ml/datasets/online+news+popularity).
 
