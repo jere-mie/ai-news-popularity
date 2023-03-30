@@ -1,4 +1,4 @@
-# Ai-News-Popularity
+# AI-News-Popularity
 
 A selection of Jupyter notebooks useful for comparing how well different classification and regression strategies predict the popularity of online news articles.
 
