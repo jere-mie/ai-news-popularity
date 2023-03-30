@@ -1,6 +1,23 @@
-# 3710-a2
+# Ai-News-Popularity
 
-Assignment 2 of COMP-3710
+A selection of Jupyter notebooks useful for comparing how well different classification and regression strategies predict the popularity of online news articles.
+
+*This code has been developed for Assignment 2 of COMP-3710 (Artificial Intelligence) at the University of Windsor, Winter 2023*
+
+## Requirements
+
+All scripts require Python version 3.6 or newer. You must have some way of running Jupyter notebooks as well (we recommend using Visual Studio Code's built in integration).
+
+### Libraries
+
+Several libraries must be installed before running this application:
+
+- sklearn
+- pandas
+- numpy
+- matplotlib
+- tensorflow
+- keras
 
 ## Data Overview
 
@@ -8,7 +25,9 @@ The dataset under test consists of ~40,000 news articles, their number of shares
 
 The data source can be found [here](https://archive.ics.uci.edu/ml/datasets/online+news+popularity).
 
-## File Breakdown
+## Classification File Breakdown
+
+The following shows the different files used for cleaning, tuning, and comparing the different classification strategies.
 
 ### Preparation
 
@@ -33,3 +52,26 @@ The following notebooks contain algorithms to be run on the train and test sets:
   - This notebook runs the gradient boost algorithm with the goal of classifying this data.
 - [regression_comparison.ipynb](code/regression_comparison.ipynb)
   - Comparing algorithms in a regression context to see how they stack up.
+
+## Regression File Breakdown
+
+The following shows the different files used for cleaning, tuning, and comparing the different regression strategies.
+
+### Preparation
+
+The following notebook is used for preparing the data:
+
+- [data_prep_regression.ipynb](code/data_prep_regression.ipynb)
+  - This notebook drops categorical features and other features that are unimportant to our algorithms. This should be the first notebook to be executed. The expected input is [OnlineNewsPopularity.csv](code/data/OnlineNewsPopularity.csv). A cleaned csv ([OnlineNewsPopularityCleanRegression.csv](code/data/OnlineNewsPopularityCleanRegression.csv)) is the expected output.
+
+### Hyperparameter Tuning
+
+The following notebook is used for finding the optimal hyperparameters for the different regression strategies:
+
+- [regression_tuning.ipynb](code/regression_tuning.ipynb)
+
+### Comparison
+
+The following notebook is used for running and comparing the performance of the different regression strategies:
+
+- [regression_comparison.ipynb](code/regression_comparison.ipynb)
